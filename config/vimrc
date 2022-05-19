@@ -1,0 +1,24 @@
+set fileencoding=utf-8
+set ts=4
+set hlsearch 
+set nu
+set cul
+set cuc
+set showmatch
+set mouse=nv
+set enc=utf-8
+set autoindent
+set paste
+
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+syntax on
+set nobackup
+set autoread
+set smartindent
+set expandtab
+autocmd BufWritePre *.c :%s/\s\+$//e
+autocmd BufWritePre *.py :%s/\s\+$//e
+
