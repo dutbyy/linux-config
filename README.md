@@ -179,7 +179,7 @@ sh get-docker.sh --mirror Aliyun
     "experimental": false
 }
 # /etc/hosts 增加 
-42.62.26.199        registry.inspir.ai 
+192.168.2.100       registry.inspir.ai
 42.62.26.201        gitlab.inspir.ai
 ```
 
