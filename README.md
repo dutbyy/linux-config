@@ -247,4 +247,18 @@ cmake .. -DBUILD_SHARED_LIBS=ON -DCMAKE_CXX_STANDARD=11
 make && make install && make clean && ldconfig 
 ```
 
-## 6. 
+## 6. WSL 
+```
+# Settings apply across all Linux distros running on WSL 2
+[wsl2]
+# Enable experimental features
+memory=12GB
+[experimental]
+networkingMode=mirrored
+autoProxy=true
+autoMemoryReclaim=dropcache 
+sparseVhd=true
+dnsTunneling=true
+firewall=true
+
+```
